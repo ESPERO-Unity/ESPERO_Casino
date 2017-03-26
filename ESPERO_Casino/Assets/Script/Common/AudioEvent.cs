@@ -24,7 +24,7 @@ public class AudioEvent : MonoBehaviour {
      **  機能：音量コントローラ
      **  備考：音量を調整する場合は、設定値を変更する。
 	 **/
-	public void Volume(){
+	public void Audio_Volume(){
 		SetAudio();
 		audioSource.volume = 1.0f;
 	}
@@ -32,7 +32,7 @@ public class AudioEvent : MonoBehaviour {
 	/**
      **  機能：オーディオ再生
 	 **/
-	public void Play(){
+	public void Audio_Play(){
 		SetAudio();
 		audioSource.Play();
 	}
@@ -40,7 +40,7 @@ public class AudioEvent : MonoBehaviour {
 	/**
      **  機能：オーディオ一時停止
 	 **/
-	public void Pause(){
+	public void Audio_Pause(){
 		SetAudio();
 		audioSource.Pause();
 	}
@@ -48,7 +48,7 @@ public class AudioEvent : MonoBehaviour {
 	/**
      **  機能：オーディオ完全停止
 	 **/
-	public void Stop(){
+	public void Audio_Stop(){
 		SetAudio();
 		audioSource.Stop();
 	}

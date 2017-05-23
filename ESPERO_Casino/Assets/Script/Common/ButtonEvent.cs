@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class ButtonEvent : MonoBehaviour {
 
@@ -19,7 +20,7 @@ public class ButtonEvent : MonoBehaviour {
 	/**
      **  機能：ボタンタップを有効化
 	 **/
-	public void Button_TapOn{
+	public void Button_TapOn(){
 		SetButton();
 		button.interactable = true;
 	}
@@ -27,7 +28,7 @@ public class ButtonEvent : MonoBehaviour {
 	/**
      **  機能：ボタンタップを無効化
 	 **/
-	public void Button_TapOff{
+	public void Button_TapOff(){
 		SetButton();
 		button.interactable = false;
 	}
@@ -68,7 +69,7 @@ public class ButtonEvent : MonoBehaviour {
 				Direction = "left";
 			}
 		}
-		else if (Mathf.Abs(directionX)<Mathf.Abs(directionY){
+		else if (Mathf.Abs(directionX) < Mathf.Abs(directionY)){
 			if (30 < directionY){
 				//上向きにフリック
 				Direction = "up";
@@ -88,7 +89,7 @@ public class ButtonEvent : MonoBehaviour {
      **  機能：フリック機能（スワイプ方向ごとの処理）
      **  備考：処理部分は使用する時に埋める
 	 **/
-	Button_Flick_Switch (string Direction){
+	void Button_Flick_Switch (string Direction){
 		switch (Direction){
 			case "up":
 			//処理

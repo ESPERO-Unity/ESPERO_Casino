@@ -92,6 +92,7 @@
     <Compile Include="Assets\Script\Common\ConstValue.cs" />
     <Compile Include="Assets\Script\Common\EnumValue.cs" />
     <Compile Include="Assets\Script\Common\SceneEvent.cs" />
+    <Compile Include="Assets\Script\Common\ScreenActiveEvent.cs" />
     <Compile Include="Assets\Script\Setting\Setting.cs" />
     <Compile Include="Assets\Script\memo.cs" />
   </ItemGroup>

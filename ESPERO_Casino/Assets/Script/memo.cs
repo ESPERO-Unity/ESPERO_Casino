@@ -15,7 +15,7 @@ public class memo : MonoBehaviour {
 	【コンポーネント型の変数】 = gameObject.GetComponent<【コンポーネント名】>();
 	【コンポーネント型の変数】 = GameObject.Find("【指定するオブジェクト名】").GetComponent<【コンポーネント名】>();
 
-	transform.SetParent(GameObject.Find("【指定するオブジェクト名】").transform);     
+	transform.SetParent(GameObject.Find("【指定するオブジェクト名】").transform);
 
 
 	◆コンポーネントに紐づくメソッド
@@ -187,9 +187,5 @@ public class memo : MonoBehaviour {
 			} catch (Exception e) {
 				Debug.Log ("タイミングファイルのデータ読込でエラー発生 ファイル名：" + tmNameFile + "、エラー内容：" + e.TargetSite);
 				// エラーセット
-
-
 	*/
-
-
 }

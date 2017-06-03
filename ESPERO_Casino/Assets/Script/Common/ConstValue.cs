@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-//固定値を使用する時は、using ConstValue; を記述してください。
-//クラスにstatic修飾子をつける事で、どのファイルでも参照可能となる。
-
-namespace ConstValue{
+/// <summary>
+/// 固定値を使用する時は、using ConstValue; を記述してください。
+///クラスにstatic修飾子をつける事で、どのファイルでも参照可能となる。
+/// </summary>
+namespace ConstValue
+{
 	
 	public static class Define{
 	
